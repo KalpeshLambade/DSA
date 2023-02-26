@@ -22,7 +22,7 @@
 // }
 // console.log(count);
 
-// // Q. Find count of number 45 from given Array. 
+// // Q. Find count of number 45 from given Array.
 // var count =0;
 // var array = [12 ,13 ,45, 67,43,45,76,89,54,23,7,8787,243,23234];
 
@@ -33,7 +33,6 @@
 // }
 // console.log(count);
 
-
 // // Question
 
 // // var nums= [2 ,7 ,11, 15];
@@ -43,7 +42,6 @@
 // // {
 
 // //     for( var j=i+1 ;j<nums.length ;j++){
-
 
 // //         if(nums[i]+nums[j] === target){
 
@@ -75,7 +73,6 @@
 // var array =[2,4,6,8,9,10,13,78,12,34,23];
 // var target =35;
 
-
 // for( var i=0 ;i<array.length-2 ; i++){
 //     for( var j=i+1; j<array.length-1 ; j++){
 //         for( var k=j+1 ;k<array.length ; k++){
@@ -83,24 +80,36 @@
 //                 console.log(array[i] , array[j] ,array[k]);
 //             }
 //         }
-        
+
 //     }
-    
+
 // }
 
 // Q 10. find given number is present in given array or not if found retun tue or else false
 
-
-var array =[1,2,443,232,546,676,2342,565,4,2,6];
-var number =6 ;
+var array = [1, 2, 443, 232, 546, 676, 2342, 565, 4, 2, 6];
+var number = 6;
 
 // console.log(array.includes(23));
 
-if(array.includes(number)){
-    console.log("true");
+// if(array.includes(number)){
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }
+
+var flag = false;
+
+for (var i = 0; i < array.length; i++) {
+  if ( array[i] === number) {
+    flag = true;
+  } 
+}
+
+if (flag ) {
+  console.log("true");
 }
 else{
     console.log("false");
 }
-
-
