@@ -156,7 +156,7 @@ var array =[9,8,7,6,5,4,3,2,1,0];
 var result ={};
 
 for(var i=0; i<array.length;i++){
-  result[i] =array[i];
+  result[i] =array[i].toString();
 }
 
 console.log(result);
