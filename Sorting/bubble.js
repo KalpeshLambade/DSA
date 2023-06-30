@@ -18,4 +18,3 @@ console.log(answer);
 //for that we use two for loops
 //first iterate from starting to end and second from staring but get reduced from end 
 //then swap two elements if needed
-//
