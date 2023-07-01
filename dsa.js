@@ -152,11 +152,21 @@
 
 // Q given an array make an object with key of that specific index with value
 
-var array =[9,8,7,6,5,4,3,2,1,0];
-var result ={};
+// var array =[9,8,7,6,5,4,3,2,1,0];
+// var result ={};
 
-for(var i=0; i<array.length;i++){
-  result[i] =array[i].toString();
-}
+// for(var i=0; i<array.length;i++){
+//   result[i] =array[i].toString();
+// }
 
-console.log(result);
+// console.log(result);
+
+const message = {
+  name: 'John',
+  greet : function(){
+    setTimeout(() =>{
+      console.log('Hey'+ this.name +', how are you?')
+    }, 1000);
+  }
+};
+message.greet();
